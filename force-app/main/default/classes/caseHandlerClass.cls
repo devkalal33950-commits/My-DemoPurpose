@@ -10,6 +10,6 @@ public class caseHandlerClass {
                caseOwnerIds.add(ce.OwnerId);
              }    
      List<AggregateResult> aggResult=[ SELECT OwnerId, COUNT(Id) caseCount FROM Case WHERE OwnerId IN :caseOwnerIds GROUP BY OwnerId];
-           
+           // hello
         }
     }
