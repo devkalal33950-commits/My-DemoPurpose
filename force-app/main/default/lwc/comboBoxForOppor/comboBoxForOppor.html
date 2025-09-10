@@ -1,0 +1,16 @@
+<template>
+    <lightning-card title="Opportunity Combo Box">
+        <lightning-combobox label="Opportunity" 
+              value={oppovalue} 
+               placeholder="Select Opportunity"
+              options={getOpporunity}
+              onchange={handelchange}>
+        </lightning-combobox>
+
+            <p> Selected Value is : {oppovalue}</p>
+            <p> Closedate is : {oppovalue.Closedate}</p>
+
+
+    </lightning-card>
+    
+</template>

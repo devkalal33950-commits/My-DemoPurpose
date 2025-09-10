@@ -1,0 +1,15 @@
+<template>
+    <lightning-card title="Two Way data Binding">
+        <lightning-input  type="text"  label="Type Here" onkeyup={changeHandler}>
+        </lightning-input>
+        <div>My course is {myName}</div>
+    </lightning-card>
+
+    <lightning-card title="Track Property">
+        <lightning-input  type="text"  label="Type Here" onkeyup={trackHandler}>
+        </lightning-input>
+        <div>{address.city} is my city</div>
+
+    </lightning-card>
+    
+</template>

@@ -1,0 +1,36 @@
+<template>
+    <div class="slds-card">
+        <div class="slds-p-around_medium slds-align_absolute-center" style="height:1.5rem"> <b>Calculator </b></div>
+        <div class="slds-p-around_medium slds-align_absolute-center" style="height:1.5rem"> <b> Salesforce Gyaan </b>
+        </div>
+        <br />
+        <div class="slds-card slds-align_absolute-center">
+            <lightning-button variant="brand" label="Show Calculator" onclick={showcalci}></lightning-button>
+            <lightning-button variant="brand" label="Hide Calculator" onclick={hidecalci}></lightning-button>
+        </div>
+        <br />
+        <template lwc:if={showCalculator}> 
+            <div class="slds-card  slds-p-around_medium">
+                <div class="slds-p-around_medium lgc-bg">
+                    <lightning-input type="text" label="Enter Digit1" name="D1" onchange={getdig1} placeholder="type here..."></lightning-input>
+                    <lightning-input type="text" label="Enter Digit2" name="D1" onchange={getdig2} placeholder="type here..."></lightning-input>
+                </div>
+                <div>
+                    <lightning-button variant="brand" label="Addr" class="slds-m-left_x-small"></lightning-button>
+                    <lightning-button variant="brand" label="Subst" class="slds-m-left_x-small"></lightning-button>
+                    <lightning-button variant="brand" label="Mul" class="slds-m-left_x-small"></lightning-button>
+                    <lightning-button variant="brand" label="Div" class="slds-m-left_x-small"></lightning-button>
+                </div>
+                <div>
+                    The result of Digit1 and Digit2 is:
+                </div>
+
+
+            </div>
+        </template>
+
+    </div>
+
+
+
+</template>

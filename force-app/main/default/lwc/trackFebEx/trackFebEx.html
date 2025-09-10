@@ -1,0 +1,10 @@
+<template>
+    <lightning-card title="@track Ex Feb">
+        <lightning-input value={FirstName} label="FirstName" onchange={changeHandler}></lightning-input>
+        <lightning-input value={LastName} label="LastName" onchange={changeHandler}></lightning-input>
+    </lightning-card>
+    <lightning-card title="Updated Changed Value">
+        <h3>Updated FIrst Name:<b>{devobj.FirstName}</b></h3>
+        <h3>Updated Last Name:<b>{devobj.LastName}</b></h3>
+    </lightning-card>
+</template>

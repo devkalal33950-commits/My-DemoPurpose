@@ -1,0 +1,15 @@
+<template>
+    
+<lightning-card title="SIGNUP AND LOGIN TEMLPLATE">
+    <lightning-button label="Sign up" onclick={onSignHandler}></lightning-button>
+    <lightning-button label="Log In" onclick={onLogHandler}></lightning-button>
+
+    <template if:true={signVar}>
+        <p>SIGN TEMPLATE</p>
+    </template>
+    <template if:true={logVar}>
+        <p>LOG TEMPLATE</p>
+    </template>
+
+</lightning-card>
+</template>

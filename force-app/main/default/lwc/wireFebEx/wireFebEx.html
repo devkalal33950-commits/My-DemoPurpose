@@ -1,0 +1,9 @@
+<template>
+   <lightning-card title="@Wire Ex Feb">
+      <lightning-input  label='Type here' onchange={changeHandler}></lightning-input>
+    <lightning-datatable
+               key-field="Id"
+               data={accounts}
+               columns={newcolumns}></lightning-datatable>
+   </lightning-card>
+</template>

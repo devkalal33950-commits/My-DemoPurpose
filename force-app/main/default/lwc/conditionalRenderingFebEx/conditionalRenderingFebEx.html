@@ -1,0 +1,12 @@
+<template>
+    <lightning-card title="Conditional Rendeing Ex">
+        <lightning-button  variant="brand" label={onClicked} onclick={onClickHandler}></lightning-button>
+
+        <template if:true={cardVisible}>
+            <lightning-card title="If true , If false Condition" >
+            {ShowMe}
+        </lightning-card>
+        </template>
+    </lightning-card>
+
+</template>
